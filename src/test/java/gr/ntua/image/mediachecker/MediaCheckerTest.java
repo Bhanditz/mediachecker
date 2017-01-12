@@ -1,6 +1,7 @@
 package gr.ntua.image.mediachecker;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -17,6 +18,7 @@ public class MediaCheckerTest {
 		Assert.assertEquals(85489, MediaChecker.getFileSize(imageFile));
 	}
 
+	@Ignore
 	@Test
 	public void testImage() throws IOException, InfoException, InterruptedException, IM4JavaException {
 		String imageFile = "src/test/resources/test.jpg";
